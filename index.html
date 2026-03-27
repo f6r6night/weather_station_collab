@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Capteurs Raspberry Pi</title>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="5">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+
+            padding>.card {
+                background: white;
+                border-radius: 16px;
+                padding: 30px;
+
+                disp>.value {
+                    font-size: 48px;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                .label {
+                    font-size: 18px;
+                    color: #888;
+                    margin-bottom: 20px;
+                }
+
+                .error {
+                    color: red;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🌡️ Station météo</h1>
+    <div class="card">
+        <div class="label">Température</div>
+        <div class="value">{{ temp }}°C</div>
+    </div>
+    &nbsp;
+    <div class="card">
+        <div class="label">Humidité</div>
+        <div class="value">{{ humidity }}%</div>
+    </div>
+</body>
+
+</html>
